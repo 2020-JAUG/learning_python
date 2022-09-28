@@ -18,9 +18,6 @@ one_variable, two_variable, three_variable, four_variable, five_variable = 'One 
 
 print(one_variable, two_variable, three_variable, four_variable, five_variable)
 
-address: str = 'Test'
-address = 32
-print(address)
 
 # Printing out types
 print(type('String!'))  # str
@@ -33,3 +30,28 @@ print(type([1, 2, 3, 4]))  # list
 print(type({'name': 'Pancho', 'age': 25, 'is_married': 25}))  # dictionary
 print(type((1, 2)))  # tuple
 print(type(zip([1, 2], [3, 4])))
+
+# Casting: Converting one data type to another data type.
+
+# int to float
+num_int = 100
+print('num_int', num_int)
+num_float = float(num_int)
+print('num_float', num_float)
+
+
+# float to int
+gravity = 9.81
+print(int(gravity))
+
+# int to string
+num_int = 10
+print(num_int)
+num_str = str(num_int)
+print(num_str)
+
+# str to int or float
+num_to_str = '10.25'
+print('num_int', int(float(num_to_str)))
+print('num_float', float(num_to_str))
+
